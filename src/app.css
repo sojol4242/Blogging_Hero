@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  /* font-family: "Poppins", sans-serif; */
 }
 
 /*  */
@@ -17,12 +16,11 @@ ul {
 .app {
   display: flex;
   height: 100vh;
-  /* width: 100vw; */
+ 
   flex-basis: auto;
   margin: 0 auto;
-  padding: 0 10px;
-  /* background: #ffff; */
-  /* background: #293241; */
+ 
+ 
 }
 
 .message,
@@ -33,9 +31,40 @@ ul {
   overflow-y: scroll;
   text-align: justify;
   width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.message>img,
+.tech>img,
+.programming>img{
+ width: 100%;
 }
 ::-webkit-scrollbar {
   display: none;
+}
+
+/* responsive */
+
+@media (max-width: 768px) {
+  .home,
+  .message,
+  .tech,
+  .programming {
+    flex: 0.9;
+    padding: 30px 10px;
+    overflow-y: scroll;
+    text-align: justify;
+    width: 80vw;
+  }
+  .app {
+    
+   
+    flex-basis: auto;
+    margin: 0 auto;
+    padding: 0 10px;
+    
+  }
 }
 /* width
 ::-webkit-scrollbar {

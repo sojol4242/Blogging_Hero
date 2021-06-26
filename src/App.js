@@ -17,14 +17,7 @@ function App() {
   // const [blogs, setBlogs] = useState([]);
   const [signedInUser, setSignedInUser] = useState({});
 
-  // useEffect(() => {
-  //   fetch("http://localhost:5000/getBlogs")
-  //     .then((res) => res.json())
-  //     .then((blogs) => {
-  //       console.log(blogs);
-  //       setBlogs(blogs)});
-  // }, []);
-  // const [preLoader, setPreLoader] = useState(true);
+  
 
   const contextData = [signedInUser, setSignedInUser];
   // console.log(contextData);

@@ -1,4 +1,3 @@
-
 import axios from "axios";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
@@ -27,7 +26,7 @@ const AddBlogs = () => {
       img: imageUrl,
       date: selectedDate.toLocaleDateString("en-BN"),
     };
-    const url = "http://localhost:5000/addBlog";
+    const url = "https://desolate-dawn-26885.herokuapp.com/addBlog";
 
     //   console.log(newService);
 
@@ -40,10 +39,13 @@ const AddBlogs = () => {
     })
       .then((res) => console.log("Server Response ", res))
       .then((data) => {
-        history.replace("/home");
+        setSuccess("Successfully posted blog");
+        // setTimeout(() => {
+        //   history.replace("/home");
+        // }, 5000);
       });
-    setSuccess("Successfully added blog");
-    setSelectedDate("dd/mm/yy")
+
+    setSelectedDate("dd/mm/yy");
     e.preventDefault();
     e.target.reset();
   };
@@ -104,10 +106,12 @@ const AddBlogs = () => {
             {errors.file && <span>Image is required</span>}
           </small>
           <br />
+
           <button className="addBtn" type="submit">
             {" "}
             <FontAwesomeIcon icon={faPlus} /> ADD
           </button>
+
           <p className="success">{success}</p>
         </form>
       </div>

@@ -43,8 +43,8 @@ label {
   margin-top: 10px;
 }
 
-.input-group > input[type="file"]{
-    padding-top: 12px;
+.input-group > input[type="file"] {
+  padding-top: 12px;
 }
 .input-group > textarea {
   width: 100%;
@@ -52,7 +52,7 @@ label {
   border: none;
   border-radius: 10px;
   height: 170px;
-  
+
   padding-left: 20px;
   margin-top: 10px;
   font-size: 16px;
@@ -60,7 +60,7 @@ label {
 .input-group > input::placeholder {
   padding-left: 20px;
   font-size: 16px;
-   
+
   color: black;
 }
 
@@ -86,7 +86,7 @@ label {
   color: #ffffff;
   border-radius: 333px;
 }
-.success{
+.success {
   color: green;
 }
 .addBlogs::-webkit-scrollbar {

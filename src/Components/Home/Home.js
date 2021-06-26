@@ -7,21 +7,29 @@ import "./Home.css";
 const Home = () => {
   const [blogs, setBlogs] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/getBlogs")
+    fetch("https://desolate-dawn-26885.herokuapp.com/getBlogs")
       .then((res) => res.json())
       .then((blogs) => {
         console.log(blogs);
-      setBlogs(blogs)
-      }
-        );
+        setBlogs(blogs);
+      });
   }, []);
- const contextData=useContext(DataContext);
- console.log(contextData);
+  const contextData = useContext(DataContext);
+  console.log(contextData);
   return (
     <div className="home">
       <div className="blogs">
        {
-         blogs.map(blog => (<Blog blog={blog} key={blog._id}/>))
+         blogs.length!==0?( 
+           <>
+           {blogs.map((blog) => (
+          <Blog blog={blog} key={blog._id} />
+        ))}
+           </>
+         ):( <div className="spinner">
+           <img src="https://i.ibb.co/hfnBb2k/62981-loader.gif" alt="spinner" /> 
+         </div> )
+         
        }
       </div>
     </div>

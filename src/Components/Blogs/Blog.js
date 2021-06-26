@@ -10,16 +10,15 @@ const Blog = ({ blog }) => {
   const adminEmail = "test@test.com";
   const email = signedInUser.email;
   // const name = signedInUser.displayName;
-  const userName = signedInUser.email.split("@gmail.com");
+  const userName = signedInUser.email.split(".com");
 
   const handleDelete = () => {
     // console.log(blog._id);
-    fetch(`http://localhost:5000/deleteBlog/${blog._id}`, {
+    fetch(`https://desolate-dawn-26885.herokuapp.com/deleteBlog/${blog._id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log("Deleted");
         alert("Blog Deleted Successfully");
       });
   };
@@ -32,7 +31,7 @@ const Blog = ({ blog }) => {
             src="https://img.icons8.com/ios-glyphs/30/000000/user-male-circle.png"
             alt="avatar"
           />
-          <h2>@{userName}</h2>
+          <h2>{userName}</h2>
         </div>
         {adminEmail === email && (
           <div className="header_right">
@@ -46,6 +45,9 @@ const Blog = ({ blog }) => {
           <img src={blog.img} alt="blog_image" />
         </div>
       </Link>
+      <p>
+        Posted: <span>{blog.date}</span>
+      </p>
     </div>
   );
 };

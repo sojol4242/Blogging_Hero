@@ -6,6 +6,7 @@ import {
   faBlog,
   faHome,
   faPlus,
+  faSignOutAlt,
   faStore,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -20,7 +21,7 @@ const Sidebar = () => {
   const adminEmail = "test@test.com";
   const email = signedInUser.email;
 
-  const userName = signedInUser.email.split("@gmail.com");
+  const userName = signedInUser.email.split(".com");
   const history = useHistory();
   const location = useLocation();
   const { from } = location.state || { from: { pathname: "/" } };
@@ -44,26 +45,22 @@ const Sidebar = () => {
         </div>
         <nav className="sidebar_options">
           <ul>
-            <li>
+            <li className="sidebar_option">
               <Link to="/home" className="sidebar_option">
-                {/* Icon  */}
                 <FontAwesomeIcon icon={faHome} className="sidebar_icon" />
                 <span className="sidebar_text">Home</span>
-                {/* text */}
               </Link>
             </li>
-            <li>
+            <li className="sidebar_option">
               <Link to="/message" className="sidebar_option">
-                {/* Icon  */}
                 <FontAwesomeIcon
                   icon={faFacebookMessenger}
                   className="sidebar_icon"
                 />
                 <span className="sidebar_text">Messages</span>
-                {/* text */}
               </Link>
             </li>
-            <li>
+            <li className="sidebar_option">
               <Link to="/technology" className="sidebar_option">
                 {/* Icon  */}
                 <FontAwesomeIcon icon={faStore} className="sidebar_icon" />
@@ -71,7 +68,7 @@ const Sidebar = () => {
                 {/* text */}
               </Link>
             </li>
-            <li>
+            <li className="sidebar_option">
               <Link to="/programming" className="sidebar_option">
                 {/* Icon  */}
                 <FontAwesomeIcon icon={faCodiepie} className="sidebar_icon" />
@@ -109,10 +106,13 @@ const Sidebar = () => {
             )
           } */}
 
-          <p className="user-name">@{userName}</p>
+          <p className="user-name">{userName}</p>
           <button className="logOut" onClick={handleSignOut}>
             {/* Icon  */}
-            <FontAwesomeIcon icon={faArrowLeft} />
+            <FontAwesomeIcon
+              style={{ marginLeft: "5px" }}
+              icon={faSignOutAlt}
+            />
             <span>Log Out</span>
             {/* text */}
           </button>

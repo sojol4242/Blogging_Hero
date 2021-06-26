@@ -1,37 +1,39 @@
 .sidebar {
   flex: 0.2;
-  /* background: #293241; */
+
   flex-basis: auto;
   height: 100%;
-  /* max-width: 25vw; */
-  border-right: #2932412d 2px solid;
+
+  border-right: #b1b1b12d 2px solid;
   margin: 0 50px;
-  /* margin-left: 30px; */
-  padding: 0 0.5em;
 
   position: relative;
-
-  /* display: flex;
-  justify-content: center; */
-  /* align-items: center; */
 }
 
 .sidebar_top {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
+  
 }
 
 .brand_icon {
-  font-size: 30px;
+  font-size: 50px;
   cursor: pointer;
-  margin: 20px 0;
-}
-nav > ul > li {
+  margin: 10px 0;
   padding: 10px 0;
-  /* box-shadow: 0px 3px 9px 1px rgba(105, 105, 105, 0.144); */
+  border-radius: 50%;
+  color: #1da1f3;
 }
-
+.brand_icon:hover {
+  background: #1da1f37e;
+  transition: all 0.5s linear;
+}
+ 
+.sidebar_option {
+  padding: 10px 0;
+}
+ 
 .sidebar_text,
 .sidebar_icon {
   font-weight: 700;
@@ -41,9 +43,9 @@ nav > ul > li {
 }
 
 .addBlog {
-  /* width: 80%; */
-  margin: 20px 0;
-  padding: 15px 30px;
+  
+  /* margin: 20px 0; */
+  padding: 12px 30px;
   border: none;
   border-radius: 333px;
   background: #1da1f3;
@@ -53,6 +55,10 @@ nav > ul > li {
   text-transform: uppercase;
   cursor: pointer;
 }
+.addBlog:hover{
+  background: #1da1f3d2;
+  transition: all .5s linear;
+}
 .logOut {
   margin: 10px 0;
   padding: 8px 15px;
@@ -60,41 +66,95 @@ nav > ul > li {
   border-radius: 333px;
   background: #1da1f3;
   color: #fff;
-  font-size: 10px;
-  font-weight: 700;
+  font-size: 12px;
+  font-weight: 900;
   text-transform: uppercase;
   cursor: pointer;
 }
-.addBlog > span {
+.logOut:hover {
+  background: #1da1f3da;
+  transition: all 0.3s linear;
+}
+.addBlog > span,.logOut>span {
   margin-left: 10px;
 }
 .profile > img {
-  width: 60px;
+  
   height: 100%;
   border-radius: 50%;
   border: 1px solid #fff;
 }
 .profile {
   display: flex;
-  width: 80%;
+  width: 90%;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 30px;
-  padding: 20px;
+  margin-bottom: 10px;
+  padding: 10px 0;
   position: absolute;
   bottom: 0;
   cursor: pointer;
-  border: 2px solid rgba(92, 92, 92, 0.089);
+  /* border: 2px solid rgba(92, 92, 92, 0.055); */
   border-radius: 333px;
-  box-shadow: -2px 1px 9px -2px rgba(112, 112, 112, 0.322);
+  box-shadow: -2px 1px 9px -2px rgba(112, 112, 112, 0.062);
   -webkit-box-shadow: -2px 1px 9px -2px rgba(112, 112, 112, 0.322);
   -moz-box-shadow: -2px 1px 9px -2px rgba(112, 112, 112, 0.322);
 }
-.profile .profile-content .name {
+.profile:hover{
+  background: #42aaeb21;
+  transition: .3s all linear;
+}
+/* .profile .profile-content .name {
   font-size: 16px;
   font-weight: 700;
-}
+} */
 .profile .profile-content .user-name {
-  font-size: 12px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    flex: 0.1;
+    
+  }
+   
+  .profile .profile-content .name,
+  .profile .profile-content .user-name,
+  .profile img {
+    display: none;
+  }
+  .profile {
+    border: none;
+    box-shadow: none;
+  }
+  .sidebar_text {
+    display: none;
+  }
+  .sidebar_option>a>.sidebar_icon{
+    padding: 6px;
+    border-radius: 50%;
+    font-size: 36px;
+     
+  }
+  .sidebar_option>a>.sidebar_icon:hover{
+    color: #1da1f3;
+    background: #1da1f365;
+  }
+  .addBlog {
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-size: 24px;
+    
+  }
+  .logOut {
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 16px;
+    margin-left: -15px;
+
+  }
+  .logOut > span,.addBlog> span{
+    display: none;
+  }
 }

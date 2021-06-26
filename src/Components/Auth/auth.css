@@ -1,30 +1,37 @@
 .auth {
+  margin: 40px auto;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  height: 90vh;
-  margin: 40px auto;
-  /* grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); */
+  /* flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-  /* grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-  grid-column-gap: 1.5rem;
-  grid-row-gap: 2rem;
-  margin-bottom: 5rem; */
-  /* background: rgb(90, 36, 36); */
+  height: auto;
+  margin: 40px auto; */
 }
 
-.auth-right,
-.auth-left {
-  flex: 0.6;
-  /* background: red; */
-  height: 100%;
-  padding: 50px 20px;
-  /* flex-basis: auto; */
-  /* box-shadow: 0px 3px 9px 1px rgba(105, 105, 105, 0.144); */
-}
 .auth-right {
+  flex: 0.6;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.auth-left {
   flex: 0.4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .auth-right > form {
@@ -32,9 +39,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-width: fit-content;
+  min-width: 100%;
   padding: 0 150px;
   margin: 140px auto;
+
   /* border-radius: 20px; */
 }
 .auth-right > form > input {
@@ -60,20 +68,7 @@
   font-weight: 700;
   cursor: pointer;
 }
-.auth-left {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.auth-left > img {
-  flex: 0.6;
-  width: 100%;
-  height: 100%;
-}
-.content {
-  flex: 0.4;
-}
+
 .auth-left p {
   font-size: 24px;
   font-weight: 500;

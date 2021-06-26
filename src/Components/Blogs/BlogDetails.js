@@ -9,7 +9,7 @@ const BlogDetails = () => {
   console.log(id);
 
   useEffect(() => {
-    fetch("http://localhost:5000/getBlogs")
+    fetch("https://desolate-dawn-26885.herokuapp.com/getBlogs")
       .then((res) => res.json())
       .then((data) => {
         // console.log(data);
@@ -25,7 +25,6 @@ const BlogDetails = () => {
       <h3>{blog.blogTitle}</h3>
       <img src={blog.img} alt={blog.blogTitle} />
       <p>{blog.description}</p>
-   
     </div>
   );
 };
