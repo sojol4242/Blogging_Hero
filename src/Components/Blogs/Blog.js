@@ -35,7 +35,7 @@ const Blog = ({ blog }) => {
         </div>
         {adminEmail === email && (
           <div className="header_right">
-            <FontAwesomeIcon icon={faTrash} onClick={handleDelete} />
+            <FontAwesomeIcon icon={faTrash} onClick={handleDelete} className="trash_icon"/>
           </div>
         )}
       </div>

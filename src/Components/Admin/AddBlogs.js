@@ -39,7 +39,7 @@ const AddBlogs = () => {
     })
       .then((res) => console.log("Server Response ", res))
       .then((data) => {
-        setSuccess("Successfully posted blog");
+        setSuccess("Blog Posted Successfully");
         // setTimeout(() => {
         //   history.replace("/home");
         // }, 5000);

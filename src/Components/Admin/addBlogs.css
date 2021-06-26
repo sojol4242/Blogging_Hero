@@ -88,6 +88,9 @@ label {
 }
 .success {
   color: green;
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 .addBlogs::-webkit-scrollbar {
   display: none;

@@ -1,5 +1,5 @@
 .blogs {
- 
+  
   display:grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-column-gap: 1.5rem;
@@ -11,7 +11,7 @@
 
 .blog {
 
-  padding: 15px 25px;
+  padding: 15px 20px;
   /* margin: 20px 0; */
   border-radius: 20px;
   box-shadow: -2px 1px 9px -2px rgba(112, 112, 112, 0.322);
@@ -33,11 +33,22 @@
   font-size: 14px;
 }
 .header_left > img {
-  width: 48px;
+  width: 56px;
 }
-
+.header_right .trash_icon{
+  padding: 10px;
+  cursor: pointer;
+  font-size: 40px;
+  color: #1da1f3;
+  /* background: #1da1f365; */
+  border-radius: 50%;
+}
+.header_right .trash_icon:hover{
+    background: #1da1f365;
+    transition: all .3s ease-in-out;
+}
 .blog_content > img {
-  width: 100%;
+  width: 90%;
   height: 200px;
   margin: 20px 0;
   border-radius: 20px;
@@ -52,9 +63,7 @@
 
 }
 .spinner img{
-  height: 170px;
+  height: 100px;
 }
 
-@media (max-width: 768px) {
  
-}
