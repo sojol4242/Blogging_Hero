@@ -1,0 +1,27 @@
+.error{
+    flex: .8;
+    background: url(https://i.ibb.co/Jp7xGKh/43391-404-error-page-not-found-confused-robot.gif);
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 80vw;
+
+}
+.btn{
+    background: #1da1f3;
+    cursor: pointer;
+    border: none;
+    padding: 10px 40px;
+    position: absolute;
+    top: 90%;
+    left:40%;
+ 
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ffffff;
+
+   
+}

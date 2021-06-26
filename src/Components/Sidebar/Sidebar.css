@@ -1,0 +1,100 @@
+.sidebar {
+  flex: 0.2;
+  /* background: #293241; */
+  flex-basis: auto;
+  height: 100%;
+  /* max-width: 25vw; */
+  border-right: #2932412d 2px solid;
+  margin: 0 50px;
+  /* margin-left: 30px; */
+  padding: 0 0.5em;
+
+  position: relative;
+
+  /* display: flex;
+  justify-content: center; */
+  /* align-items: center; */
+}
+
+.sidebar_top {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.brand_icon {
+  font-size: 30px;
+  cursor: pointer;
+  margin: 20px 0;
+}
+nav > ul > li {
+  padding: 10px 0;
+  /* box-shadow: 0px 3px 9px 1px rgba(105, 105, 105, 0.144); */
+}
+
+.sidebar_text,
+.sidebar_icon {
+  font-weight: 700;
+  font-size: 20px;
+  margin-right: 15px;
+  color: black;
+}
+
+.addBlog {
+  /* width: 80%; */
+  margin: 20px 0;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 333px;
+  background: #1da1f3;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.logOut {
+  margin: 10px 0;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 333px;
+  background: #1da1f3;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.addBlog > span {
+  margin-left: 10px;
+}
+.profile > img {
+  width: 60px;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+.profile {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  cursor: pointer;
+  border: 2px solid rgba(92, 92, 92, 0.089);
+  border-radius: 333px;
+  box-shadow: -2px 1px 9px -2px rgba(112, 112, 112, 0.322);
+  -webkit-box-shadow: -2px 1px 9px -2px rgba(112, 112, 112, 0.322);
+  -moz-box-shadow: -2px 1px 9px -2px rgba(112, 112, 112, 0.322);
+}
+.profile .profile-content .name {
+  font-size: 16px;
+  font-weight: 700;
+}
+.profile .profile-content .user-name {
+  font-size: 12px;
+  font-weight: 400;
+}

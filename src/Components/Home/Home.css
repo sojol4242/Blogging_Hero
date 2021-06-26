@@ -1,0 +1,12 @@
+.home {
+  flex: 0.8;
+  padding: 30px 10px;
+  overflow-y: scroll;
+  text-align: justify;
+  width: 80vw;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.home::-webkit-scrollbar {
+  display: none;
+}

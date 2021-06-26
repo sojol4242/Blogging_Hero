@@ -1,0 +1,33 @@
+.blogDetails {
+  flex: 0.8;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 50px;
+  overflow-y: scroll;
+  text-align: justify;
+  width: 80vw;
+}
+
+.blogDetails > h3,
+.blogDetails > p,
+.blogDetails > img {
+  margin-bottom: 30px;
+}
+.blogDetails > h3 {
+  font-size: 24px;
+  font-weight: 700;
+   text-transform: uppercase;
+}
+.blogDetails > img {
+  width: 50%;
+  height: 50%;
+  border-radius: 20px;
+}
+.blogDetails > p{
+    font-size:18px;
+    line-height: 1.5;
+    text-align: justify;
+}
+.blogDetails::-webkit-scrollbar {
+  display: none;
+}

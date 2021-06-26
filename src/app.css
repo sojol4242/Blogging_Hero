@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  /* font-family: "Poppins", sans-serif; */
+}
+
+/*  */
+a {
+  text-decoration: none;
+  color: black;
+}
+ul {
+  list-style: none;
+}
+.app {
+  display: flex;
+  height: 100vh;
+  /* width: 100vw; */
+  flex-basis: auto;
+  margin: 0 auto;
+  padding: 0 10px;
+  /* background: #ffff; */
+  /* background: #293241; */
+}
+
+.message,
+.tech,
+.programming {
+  flex: 0.8;
+  padding: 30px 10px;
+  overflow-y: scroll;
+  text-align: justify;
+  width: 80vw;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+/* width
+::-webkit-scrollbar {
+    width: 8px !important;
+  }
+  
+  /* Track */
+/* ::-webkit-scrollbar-track {
+    background: #006466;
+  
+  } */
+
+/* Handle */
+/* ::-webkit-scrollbar-thumb {
+    background: #8cf1f3  !important;;
+    border-radius: 5px !important;
+  } */
+
+/* Handle on hover  */
+/* ::-webkit-scrollbar-thumb:hover {
+    background: rgb(176, 178, 180)  !important;;
+  }
+   */
