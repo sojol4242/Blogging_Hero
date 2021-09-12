@@ -13,7 +13,7 @@ In the project directory, you can run:
 
 ## clone the repo on your system 
 ### `git clone`
-### `cd PICTURESQUE`
+### `cd Blogging_Hero`
 ### `npm install`
 ### `npm start`
 
